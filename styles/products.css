@@ -1,0 +1,380 @@
+.inventory{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products_title{
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 3rem;
+    align-self: self-start;
+    position: relative;
+}
+
+.products_title::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    border-radius: 4px;
+    background: linear-gradient(to top right, aquamarine, aqua); /* Replace with your actual gradient colors */
+    transition: all 0.3s ease-in-out;
+    
+}
+
+#search_product{
+    margin-top: 4rem;
+    width: 14rem;
+    height: 2rem;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+#search_product:focus{
+    outline: none;
+}
+
+#add_brand_info_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 32px;
+    width: 72px;
+    font-size: 17px;
+    border-radius:8px ;
+    border: 1px solid;
+    position: absolute;
+    right: 5%;
+
+}
+#add_brand_info_btn span{
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+#add_brand_info_btn:hover{
+    background-color: rgb(91, 196, 212);
+    transform: scale(1.1);
+}
+
+#add_brand_info_input{
+    background-color: white;
+    z-index: 99;
+    gap: .5rem;
+    height: 23rem;
+    width: 18rem;
+    padding: 1rem 1rem;
+    
+    border-radius: 6px;
+    position: fixed;
+    top: 25%;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 1.5px 2px 12px 1px #4e4e4e;
+    -moz-box-shadow: 1.5px 2px 12px 1px #4e4e4e;
+    box-shadow: 1.5px 2px 12px 1px #4e4e4e;
+
+
+}
+
+#add_brand_info_input input{
+    font-size: large;
+    height: 2rem;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.update_brand_info_input{
+    background-color: white;
+    z-index: 99;
+
+    height: 22rem;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 4px;
+    position: fixed;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 1.5px 2px 12px 1px #4e4e4e;
+    -moz-box-shadow: 1.5px 2px 12px 1px #4e4e4e;
+    box-shadow: 1.5px 2px 12px 1px #4e4e4e;
+
+}
+
+.update_brand_info_input h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.update_brand_info_input input{
+    font-size: large;
+    height: 2rem;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.update_brand_info_input label{
+    margin: 0;
+    font-size: .9rem;
+    margin-bottom: .25rem;
+
+}
+
+.update_brand_info_input button{
+    background-color: whitesmoke;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 16px;
+    border: none;
+
+}
+
+.update_brand_info_input button:hover{
+    background-color: aquamarine;
+    transform: scaleX(1.05);
+}
+
+.save_options{
+    margin: 8px 0px;
+    padding: 2px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.save_options button{
+    background-color: whitesmoke;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 16px;
+    border: none;
+
+}
+
+.save_options button:hover{
+    background-color: aquamarine;
+
+}
+
+.brand_info{
+    background-color: azure;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    user-select: none;
+}
+.brand_info:hover{
+    background-color: aliceblue;
+    transform: scale(.95);
+}
+.brand_info div{
+    margin: .4rem 0;
+}
+
+.brand_info div:first-child{
+    margin: .5rem .25rem;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand_info i{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: center;
+    margin: .5rem 0;
+    border-radius: 16px;
+    padding: .5rem;
+    width: 12rem;
+
+}
+
+.brand_info i:hover{
+    transform: scaleX(1.02);
+    
+}
+
+
+.brand_info i:nth-last-child(2){
+    background-color: rgb(198, 253, 235);
+
+}
+
+.brand_info i:nth-last-child(2):hover{
+    background-color: aquamarine;
+
+}
+
+.brand_info i:last-child{
+    background-color: #b30021;
+
+}
+
+.brand_info i:last-child:hover{
+    background-color: crimson;
+
+}
+
+#display_brand_info{
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#card{
+    display: block;
+    width: 19rem;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+.brand_name{
+    
+    font-style: italic;
+}
+#brand_name_value{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.brand_size{
+    font-style: italic;
+}
+#brand_size_value{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+.brand_price{
+    font-size: smaller;
+    display: flex;
+    justify-content: space-between;
+}
+
+#loader_container{
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.loader {
+    flex: 1 0 300px;
+    user-select: none;
+    position: relative;
+    height: 130px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    padding:1rem;
+    background-color: #e3e3e3;
+    overflow: hidden;
+    border-radius: 4px;
+}
+  
+.loader:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, rgba(227, 227, 227, 0) 0%, rgba(227, 227, 227, 0) 40%, rgba(227, 227, 227, 0.5) 50%, rgba(227, 227, 227, 0) 60%, rgba(227, 227, 227, 0) 100%);
+    animation: gradient-animation_2 1.2s linear infinite;
+}
+  
+.loader .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+  
+.loader .wrapper > div {
+    background-color: #cacaca;
+}
+  
+.loader .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+  
+.loader .button {
+    display: inline-block;
+    height: 32px;
+    width: 75px;
+}
+  
+.loader .line-1 {
+    position: absolute;
+    top: 11px;
+    left: 58px;
+    height: 10px;
+    width: 100px;
+}
+  
+.loader .line-2 {
+    position: absolute;
+    top: 34px;
+    left: 58px;
+    height: 10px;
+    width: 150px;
+}
+  
+.loader .line-3 {
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    height: 10px;
+    width: 100%;
+}
+  
+.loader .line-4 {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    height: 10px;
+    width: 92%;
+}
+  
+@keyframes gradient-animation_2 {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+}

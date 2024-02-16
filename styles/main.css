@@ -1,0 +1,163 @@
+* {
+	font-family: 'Segoe UI', sans-sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	transition: .2s linear;
+    
+}
+
+html {
+
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+	width: .4rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: aqua;
+	border-radius: 4rem;
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+	padding: 1rem 6rem;
+	top: 0;
+	bottom: 30;
+	right: 0;
+	left: 0;
+
+}
+#open_menu_container{
+    display: none;
+    
+    font-size: 32px;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.title i{
+    color: aqua;
+    font-size: 20px;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    margin: 1.5rem;
+
+}
+
+a:hover{
+    transition: ease-in cubic-bezier(0.455, 0.03, 0.515, 0.955)s;
+    color: aquamarine;
+    
+}
+
+.active{
+    color: aqua;
+
+}
+
+.link_pages_mobile{
+    margin-top: 5rem;
+    margin-left: 1rem;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.link_pages_mobile a{
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    width: 90%;
+    padding: .25rem 1rem;
+}
+
+.link_pages_mobile a span{
+    margin-left: 1rem;
+}
+
+.active_mobile{
+    background-color: aqua;
+
+}
+
+#side_bar{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, .95);
+    width: 40vh;
+    height: 100vh;
+
+
+}
+
+#close_menu_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    margin: 1rem;
+    width: 28px;
+    height: 36px;
+
+}
+
+#close_menu_container:hover{
+    background-color: aqua;
+    border: 1px solid black;
+    
+}
+
+@media only screen and (max-width: 790px) {
+    .header{
+        justify-content: space-around;
+        padding: 1rem 0;
+
+    }
+
+    #open_menu_container{
+        display: flex;
+    }
+
+    .link_pages{
+        display: none;
+    }
+
+    #product_list{
+        width: min-content;
+    }
+    
+}
+
